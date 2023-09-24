@@ -1,0 +1,5 @@
+/.idea/
+/cmake-build-debug-mingw/
+/cmake-build-debug-visual-studio/
+bin/opencv_world470d.dll
+/lib/opencv_world470.lib
