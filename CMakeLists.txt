@@ -3,7 +3,7 @@ project(center_pos)
 
 set(CMAKE_CXX_STANDARD 14)
 
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin/${CMAKE_BUILD_TYPE})
 
 set(OPENCV_INCLUDES1 D:\\Software\\opencv\\build\\include)
 set(OPENCV_INCLUDES2 D:\\Software\\opencv\\build\\include\\opencv2)
@@ -31,6 +31,11 @@ add_library(center_pos SHARED
 #
 #)
 
-target_link_libraries (${PROJECT_NAME} ${OPENCV_LIB}\\opencv_world470d.lib)
+if(CMAKE_BUILD_TYPE STREQUAL "Debug")
+    target_link_libraries (${PROJECT_NAME} ${OPENCV_LIB}\\opencv_world470d.lib)
+else()
+    target_link_libraries (${PROJECT_NAME} ${OPENCV_LIB}\\opencv_world470.lib)
+endif()
+
 
 
