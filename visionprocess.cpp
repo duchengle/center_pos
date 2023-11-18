@@ -9,7 +9,7 @@
 #define DEBUG_PROCESS    0
 
 #ifndef GAUSSIAN_KERNEL_SIZE
-#define GAUSSIAN_KERNEL_SIZE    7
+#define GAUSSIAN_KERNEL_SIZE    5
 #endif
 
 #ifndef CANNY_THRESHOLD

@@ -1,0 +1,38 @@
+#include <windows.h>
+
+// 设置中文编码方式
+#pragma code_page(65001)
+
+// 定义版本信息
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION 1,0,0,1
+PRODUCTVERSION 1,0,0,1
+FILEFLAGSMASK 0x3fL
+FILEFLAGS 0x0L
+FILEOS 0x40004L
+FILETYPE 0x1L
+{
+    BLOCK "StringFileInfo"
+    {
+        BLOCK "040904E4"
+        {
+            VALUE "CompanyName", "铂辉特"
+            VALUE "FileDescription", "铂辉特寻中库"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "center_pos"
+            VALUE "LegalCopyright", "铂辉特"
+            VALUE "OriginalFilename", "center_pos.dll" // 替换为你的可执行文件名
+            VALUE "ProductName", "center_pos"
+            VALUE "ProductVersion", "1.0.0.1"
+        }
+    }
+    BLOCK "VarFileInfo"
+    {
+        VALUE "Translation", 0x409, 1200
+    }
+}
+
+// 定义其他资源（这里只是一个示例，你可以添加其他资源）
+// IDR_MYICON ICON "myicon.ico" // 替换为你的图标文件路径和名称
+
+// 其他资源定义...
