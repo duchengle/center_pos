@@ -32,5 +32,6 @@ int CalculateMarkerCenter(const char *strImgPath, float *x, float *y)
     }
 
     pProcessObj->GetMakerCenter(x, y);
+    delete pProcessObj;
     return res;
 }
